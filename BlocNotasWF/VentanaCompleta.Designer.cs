@@ -1,16 +1,16 @@
 ﻿namespace BlocNotasWF
 {
-    partial class Pestañas
+    partial class VentanaCompleta
     {
-        /// <summary>
-        /// Required designer variable.
+        /// <summary> 
+        /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
+        /// <summary> 
+        /// Limpiar los recursos que se estén usando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,19 +20,19 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de componentes
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// <summary> 
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaPestañaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaVentanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,46 +61,31 @@
             this.reducirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restablecerZoomOriginalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barraDeEstadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaPestañaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabelLineaCol = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusSpacer1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelWords = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusSpacer2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelZoom = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusSpacer3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelCodification = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage1
+            // panel1
             // 
-            this.tabPage1.Controls.Add(this.richTextBox1);
-            this.tabPage1.Controls.Add(this.menuStrip1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(790, 422);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Sin título";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(0, -1);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(798, 448);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.AcceptsTab = true;
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 29);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(784, 390);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.panel1.Controls.Add(this.statusStrip1);
+            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(544, 305);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // menuStrip1
             // 
@@ -110,10 +95,10 @@
             this.archivoToolStripMenuItem,
             this.editarToolStripMenuItem,
             this.verToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(3, 3);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 26);
-            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Size = new System.Drawing.Size(544, 26);
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
@@ -121,6 +106,7 @@
             this.archivoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaPestañaToolStripMenuItem,
+            this.nuevaVentanaToolStripMenuItem,
             this.abrirToolStripMenuItem,
             this.guardarToolStripMenuItem,
             this.guardarComoToolStripMenuItem,
@@ -135,13 +121,30 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             this.archivoToolStripMenuItem.Text = "Achivo";
             // 
+            // nuevaPestañaToolStripMenuItem
+            // 
+            this.nuevaPestañaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.nuevaPestañaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.nuevaPestañaToolStripMenuItem.Name = "nuevaPestañaToolStripMenuItem";
+            this.nuevaPestañaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.nuevaPestañaToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.nuevaPestañaToolStripMenuItem.Text = "Nueva pestaña";
+            // 
+            // nuevaVentanaToolStripMenuItem
+            // 
+            this.nuevaVentanaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.nuevaVentanaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.nuevaVentanaToolStripMenuItem.Name = "nuevaVentanaToolStripMenuItem";
+            this.nuevaVentanaToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.nuevaVentanaToolStripMenuItem.Text = "Nueva ventana";
+            // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.abrirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // guardarToolStripMenuItem
@@ -150,7 +153,7 @@
             this.guardarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
             // 
             // guardarComoToolStripMenuItem
@@ -158,21 +161,21 @@
             this.guardarComoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.guardarComoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar como...";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(233, 6);
             // 
             // configurarPáginaToolStripMenuItem
             // 
             this.configurarPáginaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.configurarPáginaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.configurarPáginaToolStripMenuItem.Name = "configurarPáginaToolStripMenuItem";
-            this.configurarPáginaToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.configurarPáginaToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.configurarPáginaToolStripMenuItem.Text = "Configurar página";
             // 
             // imprimirToolStripMenuItem
@@ -181,7 +184,7 @@
             this.imprimirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
             this.imprimirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             // 
             // toolStripSeparator4
@@ -189,14 +192,14 @@
             this.toolStripSeparator4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.toolStripSeparator4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(209, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(233, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.salirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // editarToolStripMenuItem
@@ -376,37 +379,121 @@
             this.barraDeEstadoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.barraDeEstadoToolStripMenuItem.Text = "Barra de estado";
             // 
-            // nuevaPestañaToolStripMenuItem
+            // richTextBox1
             // 
-            this.nuevaPestañaToolStripMenuItem.Name = "nuevaPestañaToolStripMenuItem";
-            this.nuevaPestañaToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.nuevaPestañaToolStripMenuItem.Text = "Nueva pestaña";
-            this.nuevaPestañaToolStripMenuItem.Click += new System.EventHandler(this.nuevaPestañaToolStripMenuItem_Click);
+            this.richTextBox1.AcceptsTab = true;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 26);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(544, 279);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
             // 
-            // Pestañas
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.statusStrip1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 80, 2);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelLineaCol,
+            this.toolStripStatusSpacer1,
+            this.toolStripStatusLabelWords,
+            this.toolStripStatusSpacer2,
+            this.toolStripStatusLabelZoom,
+            this.toolStripStatusSpacer3,
+            this.toolStripStatusLabelCodification});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 283);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.ShowItemToolTips = true;
+            this.statusStrip1.Size = new System.Drawing.Size(544, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabelLineaCol
+            // 
+            this.toolStripStatusLabelLineaCol.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripStatusLabelLineaCol.Name = "toolStripStatusLabelLineaCol";
+            this.toolStripStatusLabelLineaCol.Size = new System.Drawing.Size(105, 17);
+            this.toolStripStatusLabelLineaCol.Text = "Lin 1, Col 1  ";
+            this.toolStripStatusLabelLineaCol.ToolTipText = "Línea , Columna";
+            // 
+            // toolStripStatusSpacer1
+            // 
+            this.toolStripStatusSpacer1.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusSpacer1.Name = "toolStripStatusSpacer1";
+            this.toolStripStatusSpacer1.Size = new System.Drawing.Size(14, 17);
+            this.toolStripStatusSpacer1.Text = "|";
+            // 
+            // toolStripStatusLabelWords
+            // 
+            this.toolStripStatusLabelWords.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabelWords.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.toolStripStatusLabelWords.Margin = new System.Windows.Forms.Padding(0, 3, 20, 2);
+            this.toolStripStatusLabelWords.Name = "toolStripStatusLabelWords";
+            this.toolStripStatusLabelWords.Size = new System.Drawing.Size(98, 17);
+            this.toolStripStatusLabelWords.Text = "Palabras: 0  ";
+            // 
+            // toolStripStatusSpacer2
+            // 
+            this.toolStripStatusSpacer2.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusSpacer2.Name = "toolStripStatusSpacer2";
+            this.toolStripStatusSpacer2.Size = new System.Drawing.Size(14, 17);
+            this.toolStripStatusSpacer2.Text = "|";
+            // 
+            // toolStripStatusLabelZoom
+            // 
+            this.toolStripStatusLabelZoom.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabelZoom.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabelZoom.Margin = new System.Windows.Forms.Padding(0, 3, 20, 2);
+            this.toolStripStatusLabelZoom.Name = "toolStripStatusLabelZoom";
+            this.toolStripStatusLabelZoom.Size = new System.Drawing.Size(35, 17);
+            this.toolStripStatusLabelZoom.Text = "100%";
+            this.toolStripStatusLabelZoom.ToolTipText = "Zoom";
+            // 
+            // toolStripStatusSpacer3
+            // 
+            this.toolStripStatusSpacer3.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusSpacer3.Name = "toolStripStatusSpacer3";
+            this.toolStripStatusSpacer3.Size = new System.Drawing.Size(14, 17);
+            this.toolStripStatusSpacer3.Text = "|";
+            // 
+            // toolStripStatusLabelCodification
+            // 
+            this.toolStripStatusLabelCodification.ForeColor = System.Drawing.SystemColors.Control;
+            this.toolStripStatusLabelCodification.Name = "toolStripStatusLabelCodification";
+            this.toolStripStatusLabelCodification.Size = new System.Drawing.Size(98, 17);
+            this.toolStripStatusLabelCodification.Text = "Codificacion:";
+            // 
+            // VentanaCompleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "Pestañas";
-            this.Text = "Pestañas";
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(544, 150);
+            this.Name = "VentanaCompleta";
+            this.Size = new System.Drawing.Size(544, 305);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabControl tabControl1;
-        public System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaPestañaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaVentanaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
@@ -435,6 +522,14 @@
         private System.Windows.Forms.ToolStripMenuItem reducirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restablecerZoomOriginalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barraDeEstadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaPestañaToolStripMenuItem;
+        public System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelLineaCol;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusSpacer1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelWords;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusSpacer2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelZoom;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusSpacer3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelCodification;
     }
 }

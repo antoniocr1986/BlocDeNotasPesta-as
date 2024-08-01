@@ -1,6 +1,6 @@
 ﻿namespace BlocNotasWF
 {
-    partial class Configuracion
+    partial class FormConfiguracion
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracion));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfiguracion));
             this.labelApariencia = new System.Windows.Forms.Label();
             this.labelFormato = new System.Windows.Forms.Label();
             this.labelOrtografia = new System.Windows.Forms.Label();
@@ -356,14 +356,14 @@
             // claroToolStripMenuItem
             // 
             this.claroToolStripMenuItem.Name = "claroToolStripMenuItem";
-            this.claroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.claroToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.claroToolStripMenuItem.Text = "Claro";
             this.claroToolStripMenuItem.Click += new System.EventHandler(this.claroToolStripMenuItem_Click);
             // 
             // oscuroToolStripMenuItem
             // 
             this.oscuroToolStripMenuItem.Name = "oscuroToolStripMenuItem";
-            this.oscuroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oscuroToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.oscuroToolStripMenuItem.Text = "Oscuro";
             this.oscuroToolStripMenuItem.Click += new System.EventHandler(this.oscuroToolStripMenuItem_Click);
             // 
@@ -377,11 +377,11 @@
             // correctorOrtografíaToolStripMenuItem
             // 
             this.correctorOrtografíaToolStripMenuItem.Name = "correctorOrtografíaToolStripMenuItem";
-            this.correctorOrtografíaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.correctorOrtografíaToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.correctorOrtografíaToolStripMenuItem.Text = "Corrector ortografía";
             this.correctorOrtografíaToolStripMenuItem.Click += new System.EventHandler(this.correctorOrtografíaToolStripMenuItem_Click);
             // 
-            // Configuracion
+            // FormConfiguracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -395,7 +395,7 @@
             this.Controls.Add(this.labelFormato);
             this.Controls.Add(this.labelApariencia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Configuracion";
+            this.Name = "FormConfiguracion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bloc de notas";
             this.Load += new System.EventHandler(this.Configuracion_Load);
